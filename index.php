@@ -118,6 +118,7 @@
 
     <section id="menu-section" class="menu-section">
         <h2 class="section-title">Our Menu</h2>
+        <p class="section-description">Explore our handpicked cold coffee creations, each crafted for refreshment and delight.</p>
 
         <div class="swiper">
             <div class="swiper-wrapper">
@@ -128,7 +129,7 @@
                         <h3>Almond Frappe</h3>
                         <small>Deliciously nutty, refreshingly cold</small>
                         <p class="price">₱150</p>
-                    
+
                         <button class="btn btn-primary">Buy</button>
                     </div>
                 </div>
@@ -141,7 +142,7 @@
                         <button class="btn btn-primary">Buy</button>
                     </div>
                 </div>
-                 <div class="swiper-slide">
+                <div class="swiper-slide">
                     <div class="menu-card">
                         <img src="assets/menu/coffee-banana-milkshake.webp" alt="Iced Latte">
                         <h3>Coffee Banana Milkshake</h3>
@@ -150,7 +151,7 @@
                         <button class="btn btn-primary">Buy</button>
                     </div>
                 </div>
-                 <div class="swiper-slide">
+                <div class="swiper-slide">
                     <div class="menu-card">
                         <img src="assets/menu/coffee-slushie.webp" alt="Iced Latte">
                         <h3>Coffee Slushie</h3>
@@ -159,7 +160,7 @@
                         <button class="btn btn-primary">Buy</button>
                     </div>
                 </div>
-                 <div class="swiper-slide">
+                <div class="swiper-slide">
                     <div class="menu-card">
                         <img src="assets/menu/coffee-smoothie.webp" alt="Iced Latte">
                         <h3>Coffee Smoothie</h3>
@@ -168,7 +169,7 @@
                         <button class="btn btn-primary">Buy</button>
                     </div>
                 </div>
-                 <div class="swiper-slide">
+                <div class="swiper-slide">
                     <div class="menu-card">
                         <img src="assets/menu/dalgona-coffee.webp" alt="Iced Latte">
                         <h3>Dalgona Coffee</h3>
@@ -177,7 +178,7 @@
                         <button class="btn btn-primary">Buy</button>
                     </div>
                 </div>
-                 <div class="swiper-slide">
+                <div class="swiper-slide">
                     <div class="menu-card">
                         <img src="assets/menu/iced-caramel-latte-macchiato.webp" alt="Iced Latte">
                         <h3>Caramel Latte Macchiato</h3>
@@ -186,7 +187,7 @@
                         <button class="btn btn-primary">Buy</button>
                     </div>
                 </div>
-                 <div class="swiper-slide">
+                <div class="swiper-slide">
                     <div class="menu-card">
                         <img src="assets/menu/iced-coconut-latte.webp" alt="Iced Latte">
                         <h3>Iced Coconut Latte</h3>
@@ -195,7 +196,7 @@
                         <button class="btn btn-primary">Buy</button>
                     </div>
                 </div>
-                 <div class="swiper-slide">
+                <div class="swiper-slide">
                     <div class="menu-card">
                         <img src="assets/menu/iced-vanilla-latte.webp" alt="Iced Latte">
                         <h3>Iced Vanilla Latte</h3>
@@ -204,7 +205,7 @@
                         <button class="btn btn-primary">Buy</button>
                     </div>
                 </div>
-                 <div class="swiper-slide">
+                <div class="swiper-slide">
                     <div class="menu-card">
                         <img src="assets/menu/mocha-iced-coffee.webp" alt="Iced Latte">
                         <h3>Mocha Iced Coffee</h3>
@@ -213,7 +214,7 @@
                         <button class="btn btn-primary">Buy</button>
                     </div>
                 </div>
-                 <div class="swiper-slide">
+                <div class="swiper-slide">
                     <div class="menu-card">
                         <img src="assets/menu/sparkling-iced-coffee.webp" alt="Iced Latte">
                         <h3>Sparkling Iced Coffee</h3>
@@ -229,6 +230,28 @@
 
         <div class="view-all-container">
             <button class="btn btn-secondary">View All Products</button>
+        </div>
+    </section>
+
+    <!-- Best Seller Section -->
+    <section class="best-seller-section">
+        <div class="best-seller-container">
+            <div class="best-seller-image">
+                <img src="assets/menu/iced-coffee-ice-cream.jpg" alt="Iced Coffee Ice Cream">
+                <span class="best-seller-tag">All-Time Favorite</span>
+            </div>
+            <div class="best-seller-details">
+                <h2>Iced Coffee Ice Cream</h2>
+                <p>
+                    Savory, rich, and utterly refreshing — our Iced Coffee Ice Cream blends smooth espresso with creamy vanilla ice cream for the ultimate frozen indulgence. Perfectly balanced to give you a sweet caffeine kick.
+                </p>
+                <div class="best-seller-icons">
+                    <img src="assets/favorite.png" alt="Favorite Icon" title="Customer Favorite">
+                    <span>Best Seller</span>
+                </div>
+                <p class="best-seller-price">₱185</p>
+                <button class="btn btn-primary">Order Now</button>
+            </div>
         </div>
     </section>
 
