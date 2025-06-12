@@ -43,7 +43,7 @@
             </ul>
 
             <div class="nav-actions">
-                <button class="btn btn-primary">Login</button>
+                <button class="btn buy-btn">Login</button>
             </div>
         </nav>
 
@@ -130,7 +130,7 @@
                         <small>Deliciously nutty, refreshingly cold</small>
                         <p class="price">₱150</p>
 
-                        <button class="btn btn-primary">Buy</button>
+                        <button class="btn buy-btn">Buy</button>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -139,7 +139,7 @@
                         <h3>Caramel Frappe</h3>
                         <small>Ice cold, with smooth caramel</small>
                         <p class="price">₱165</p>
-                        <button class="btn btn-primary">Buy</button>
+                        <button class="btn buy-btn">Buy</button>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -148,7 +148,7 @@
                         <h3>Coffee Banana Milkshake</h3>
                         <small>An ice-cold, sweet treat</small>
                         <p class="price">₱165</p>
-                        <button class="btn btn-primary">Buy</button>
+                        <button class="btn buy-btn">Buy</button>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -157,7 +157,7 @@
                         <h3>Coffee Slushie</h3>
                         <small>The coolest iced coffee you'll ever try</small>
                         <p class="price">₱165</p>
-                        <button class="btn btn-primary">Buy</button>
+                        <button class="btn buy-btn">Buy</button>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -166,7 +166,7 @@
                         <h3>Coffee Smoothie</h3>
                         <small>A smooth start to the day</small>
                         <p class="price">₱165</p>
-                        <button class="btn btn-primary">Buy</button>
+                        <button class="btn buy-btn">Buy</button>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -175,7 +175,7 @@
                         <h3>Dalgona Coffee</h3>
                         <small>Creamy and tasty</small>
                         <p class="price">₱165</p>
-                        <button class="btn btn-primary">Buy</button>
+                        <button class="btn buy-btn">Buy</button>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -184,7 +184,7 @@
                         <h3>Caramel Latte Macchiato</h3>
                         <small>A swirl of caramel</small>
                         <p class="price">₱165</p>
-                        <button class="btn btn-primary">Buy</button>
+                        <button class="btn buy-btn">Buy</button>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -193,7 +193,7 @@
                         <h3>Iced Coconut Latte</h3>
                         <small>Rich, balanced, and ice-cold</small>
                         <p class="price">₱165</p>
-                        <button class="btn btn-primary">Buy</button>
+                        <button class="btn buy-btn">Buy</button>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -202,7 +202,7 @@
                         <h3>Iced Vanilla Latte</h3>
                         <small>A creamy vanilla latte - served cold</small>
                         <p class="price">₱165</p>
-                        <button class="btn btn-primary">Buy</button>
+                        <button class="btn buy-btn">Buy</button>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -211,7 +211,7 @@
                         <h3>Mocha Iced Coffee</h3>
                         <small>Refreshingly cold and chocolatey</small>
                         <p class="price">₱165</p>
-                        <button class="btn btn-primary">Buy</button>
+                        <button class="btn buy-btn">Buy</button>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -220,7 +220,7 @@
                         <h3>Sparkling Iced Coffee</h3>
                         <small>Let your NESCAFE sparkle</small>
                         <p class="price">₱165</p>
-                        <button class="btn btn-primary">Buy</button>
+                        <button class="btn buy-btn">Buy</button>
                     </div>
                 </div>
                 <!-- Add more cards as needed -->
@@ -250,10 +250,119 @@
                     <span>Best Seller</span>
                 </div>
                 <p class="best-seller-price">₱185</p>
-                <button class="btn btn-primary">Order Now</button>
+                <button class="btn buy-btn">Order Now</button>
             </div>
         </div>
     </section>
+
+    <!-- Meet Our Staff Section -->
+<section class="staff-section">
+    <div class="staff-header">
+        <div class="staff-title">
+            <h2>Meet Our Staff</h2>
+            <p>Get to know the passionate people behind your favorite coffee creations.</p>
+        </div>
+        <div class="staff-button">
+            <button class="btn btn-secondary">
+                View More
+                <img src="assets/right-arrow.png" alt="Right Arrow Icon">
+            </button>
+        </div>
+    </div>
+
+    <div class="staff-grid">
+        <div class="staff-card">
+            <img src="assets/Liam.jpg" alt="Liam">
+            <h4>Leo</h4>
+        </div>
+        <div class="staff-card">
+            <img src="assets/Emma.jpg" alt="Emma">
+            <h4>Emma</h4>
+        </div>
+        <div class="staff-card">
+            <img src="assets/Sophie.jpg" alt="Sophie">
+            <h4>Sophie</h4>
+        </div>
+        <div class="staff-card">
+            <img src="assets/Olivia.jpg" alt="Olivia">
+            <h4>Olivia</h4>
+        </div>
+        <div class="staff-card">
+            <img src="assets/Ava.jpg" alt="Ava">
+            <h4>Ava</h4>
+        </div>
+        <div class="staff-card">
+            <img src="assets/Noah.jpg" alt="Noah">
+            <h4>Noah</h4>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="newsletter-section">
+  <div class="newsletter-container">
+    <div class="newsletter-content">
+      <h2>Join Our Newsletter</h2>
+      <p>Stay updated with the latest promos, seasonal drinks, and exclusive coffee creations.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="newsletter-image">
+      <img src="assets/newsletter.png" alt="Newsletter">
+    </div>
+  </div>
+</section>
+
+<footer class="footer-section">
+  <div class="footer-container">
+    
+    <!-- Logo and Title -->
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="Logo">
+      <h2>Brew Haven</h2>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="footer-nav">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="#home-section">Home</a></li>
+        <li><a href="#menu-section">Menu</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Open Hours -->
+    <div class="footer-hours">
+      <h4>Opening Hours</h4>
+      <p>Mon - Fri: 8:00 AM – 8:00 PM</p>
+      <p>Sat - Sun: 9:00 AM – 10:00 PM</p>
+      <p>   123 Brew Avenue, Coffeeville, CA 90210</p>
+    </div>
+
+    <!-- Socials -->
+    <div class="footer-socials">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="assets/youtube.png" alt="YouTube"></a>
+        <a href="#"><img src="assets/x.png" alt="X"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Caffeine Canvas. All rights reserved.</p>
+  </div>
+</footer>
+
+
 
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

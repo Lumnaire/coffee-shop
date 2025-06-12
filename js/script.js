@@ -13,3 +13,18 @@
         overlay.classList.remove('active');
     });
 
+    const staffSwiper = new Swiper('.staff-swiper', {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    spaceBetween: 20,
+    slidesPerView: 'auto',
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
+
