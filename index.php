@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
     <!-- Link to your external stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -114,7 +114,154 @@
         </div>
     </section>
 
-<script src="js/script.js"></script>
+    <!-- Menu Section -->
+
+    <section id="menu-section" class="menu-section">
+        <h2 class="section-title">Our Menu</h2>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Repeat for 8 items -->
+                <div class="swiper-slide">
+                    <div class="menu-card">
+                        <img src="assets/menu/almond-frappe.webp" alt="Cappuccino">
+                        <h3>Almond Frappe</h3>
+                        <small>Deliciously nutty, refreshingly cold</small>
+                        <p class="price">₱150</p>
+                    
+                        <button class="btn btn-primary">Buy</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="menu-card">
+                        <img src="assets/menu/caramel-frappe.webp" alt="Iced Latte">
+                        <h3>Caramel Frappe</h3>
+                        <small>Ice cold, with smooth caramel</small>
+                        <p class="price">₱165</p>
+                        <button class="btn btn-primary">Buy</button>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="menu-card">
+                        <img src="assets/menu/coffee-banana-milkshake.webp" alt="Iced Latte">
+                        <h3>Coffee Banana Milkshake</h3>
+                        <small>An ice-cold, sweet treat</small>
+                        <p class="price">₱165</p>
+                        <button class="btn btn-primary">Buy</button>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="menu-card">
+                        <img src="assets/menu/coffee-slushie.webp" alt="Iced Latte">
+                        <h3>Coffee Slushie</h3>
+                        <small>The coolest iced coffee you'll ever try</small>
+                        <p class="price">₱165</p>
+                        <button class="btn btn-primary">Buy</button>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="menu-card">
+                        <img src="assets/menu/coffee-smoothie.webp" alt="Iced Latte">
+                        <h3>Coffee Smoothie</h3>
+                        <small>A smooth start to the day</small>
+                        <p class="price">₱165</p>
+                        <button class="btn btn-primary">Buy</button>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="menu-card">
+                        <img src="assets/menu/dalgona-coffee.webp" alt="Iced Latte">
+                        <h3>Dalgona Coffee</h3>
+                        <small>Creamy and tasty</small>
+                        <p class="price">₱165</p>
+                        <button class="btn btn-primary">Buy</button>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="menu-card">
+                        <img src="assets/menu/iced-caramel-latte-macchiato.webp" alt="Iced Latte">
+                        <h3>Caramel Latte Macchiato</h3>
+                        <small>A swirl of caramel</small>
+                        <p class="price">₱165</p>
+                        <button class="btn btn-primary">Buy</button>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="menu-card">
+                        <img src="assets/menu/iced-coconut-latte.webp" alt="Iced Latte">
+                        <h3>Iced Coconut Latte</h3>
+                        <small>Rich, balanced, and ice-cold</small>
+                        <p class="price">₱165</p>
+                        <button class="btn btn-primary">Buy</button>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="menu-card">
+                        <img src="assets/menu/iced-vanilla-latte.webp" alt="Iced Latte">
+                        <h3>Iced Vanilla Latte</h3>
+                        <small>A creamy vanilla latte - served cold</small>
+                        <p class="price">₱165</p>
+                        <button class="btn btn-primary">Buy</button>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="menu-card">
+                        <img src="assets/menu/mocha-iced-coffee.webp" alt="Iced Latte">
+                        <h3>Mocha Iced Coffee</h3>
+                        <small>Refreshingly cold and chocolatey</small>
+                        <p class="price">₱165</p>
+                        <button class="btn btn-primary">Buy</button>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="menu-card">
+                        <img src="assets/menu/sparkling-iced-coffee.webp" alt="Iced Latte">
+                        <h3>Sparkling Iced Coffee</h3>
+                        <small>Let your NESCAFE sparkle</small>
+                        <p class="price">₱165</p>
+                        <button class="btn btn-primary">Buy</button>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="view-all-container">
+            <button class="btn btn-secondary">View All Products</button>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2
+                },
+                768: {
+                    slidesPerView: 3
+                },
+                1024: {
+                    slidesPerView: 4
+                }
+            },
+            loop: true,
+            grabCursor: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        });
+    </script>
+
 </body>
 
 </html>
