@@ -1,0 +1,584 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif; 
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Section Styling */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    color: #fff;
+    text-align: center;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -2;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: -1; 
+}
+
+/* Navbar Styling */
+.navbar {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; 
+    z-index: 10; 
+    transition: background-color 0.3s ease;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+}
+
+.nav-logo a {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 2.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+.nav-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem; 
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffd700;
+    transform: translateY(-2px);
+}
+
+.btn {
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none; 
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block; 
+}
+
+.btn-primary {
+    background-color: #ffd700; 
+    color: #333;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #e0b300; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.4);
+}
+
+/* Hero Content Styling */
+.hero-content {
+    z-index: 1; 
+    max-width: 800px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 5rem; 
+}
+
+.hero-content .brand-name {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content .tagline {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.btn-secondary {
+    background-color: #5cb85c; /* Green */
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(92, 184, 92, 0.3);
+}
+
+.btn-secondary:hover {
+    background-color: #4cae4c; /* Darker green */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(76, 174, 76, 0.4);
+}
+
+.info-badges {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.15); 
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-icon {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 1.5rem 2rem;
+    }
+    .nav-links {
+        gap: 2rem;
+    }
+    .hero-content .brand-name {
+        font-size: 4rem;
+    }
+    .hero-content .tagline {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        align-items: center;
+    }
+    .nav-links {
+        flex-direction: column; 
+        gap: 1rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .nav-links li a {
+        font-size: 1rem;
+    }
+    .nav-actions {
+        margin-top: 1rem;
+    }
+    .hero-content {
+        padding: 1rem;
+        margin-top: 10rem; 
+    }
+    .hero-content .brand-name {
+        font-size: 3rem;
+    }
+    .hero-content .tagline {
+        font-size: 1.2rem;
+    }
+    .info-badges {
+        flex-direction: column; 
+        gap: 1.5rem;
+    }
+    .info-item {
+        width: 90%; 
+        max-width: 300px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-logo a {
+        font-size: 1.8rem;
+    }
+    .hero-content .brand-name {
+        font-size: 2.5rem;
+    }
+    .hero-content .tagline {
+        font-size: 1rem;
+    }
+    .btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    .info-item {
+        font-size: 0.95rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 280px;
+    height: 100vh;
+    background-color: #1f1f1f;
+    color: #fff;
+    z-index: 1000;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    transition: left 0.3s ease-in-out;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sidebar-header img {
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar-header h2 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.sidebar-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar-links li a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.sidebar-links li a:hover {
+    color: #ffd700;
+}
+
+/* Overlay */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    display: none;
+}
+
+/* Active states */
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar-overlay.active {
+    display: block;
+}
+
+/* Responsive - show hamburger menu */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links, .nav-actions {
+        display: none;
+    }
+}
+
+/* About Us Section Styling */
+#about-us {
+    padding: 6rem 3rem; /* Adjust padding for top/bottom and sides */
+    background-color: #fff; /* White background for this section */
+    color: #333;
+}
+
+.about-us-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    gap: 3rem; /* Space between the left and right columns */
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center the container */
+    align-items: center; /* Vertically align items */
+    justify-content: center; /* Horizontally center items */
+}
+
+.about-left {
+    flex: 1.5; /* Takes equal space, will adjust with min-width */
+    min-width: 300px; /* Minimum width before wrapping */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    padding: 1rem;
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+   
+}
+
+.service-info-card {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px; /* Max width for the card */
+      background-color: #86624A;
+}
+
+.service-info-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.service-info-card p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.service-info-card hr {
+    margin-bottom: 1rem;
+}
+
+.service-info-card strong {
+    color: #fff;
+}
+
+.service-info-card .location-text {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.about-right {
+    flex: 2; /* Takes more space than left */
+    min-width: 350px; /* Minimum width before wrapping */
+    padding: 1rem;
+}
+
+.about-sub-title {
+    font-size: 1.2rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.about-main-title {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 3rem; /* Oleo Script font for this title */
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 1.5rem 2rem;
+    }
+    .nav-links {
+        gap: 2rem;
+    }
+    .hero-content .brand-name {
+        font-size: 4rem;
+    }
+    .hero-content .tagline {
+        font-size: 1.4rem;
+    }
+    #about-us {
+        padding: 4rem 2rem;
+    }
+    .about-main-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.7); /* Slightly darker on small screens for better contrast when stacked */
+        backdrop-filter: blur(8px);
+    }
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 1rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .nav-links li a {
+        font-size: 1rem;
+    }
+    .nav-actions {
+        margin-top: 1rem;
+    }
+
+    /* Adjust hero section padding to account for taller fixed navbar */
+    #hero {
+        padding-top: 10rem; /* More space for stacked nav */
+    }
+
+    .hero-content .brand-name {
+        font-size: 3rem;
+    }
+    .hero-content .tagline {
+        font-size: 1.2rem;
+    }
+    .info-badges {
+        flex-direction: column; /* Stack badges vertically */
+        gap: 1.5rem;
+    }
+    .info-item {
+        width: 90%; /* Make items take more width */
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .about-us-container {
+        flex-direction: column; /* Stack columns vertically */
+        gap: 2rem;
+    }
+    .about-left, .about-right {
+        min-width: unset; /* Remove min-width to allow full width */
+        width: 100%;
+        padding: 0; /* Remove padding as container handles it */
+    }
+    .about-image {
+        max-width: 80%; /* Smaller image on mobile */
+    }
+    .service-info-card {
+        max-width: 80%; /* Smaller card on mobile */
+    }
+    .about-main-title {
+        font-size: 2rem;
+    }
+    .about-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-logo a {
+        font-size: 1.8rem;
+    }
+    .hero-content .brand-name {
+        font-size: 2.5rem;
+    }
+    .hero-content .tagline {
+        font-size: 1rem;
+    }
+    .btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    .info-item {
+        font-size: 0.95rem;
+        padding: 0.6rem 1.2rem;
+    }
+    #about-us {
+        padding: 3rem 1rem;
+    }
+    .about-main-title {
+        font-size: 1.8rem;
+    }
+}
+
