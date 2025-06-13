@@ -25,15 +25,17 @@
 
         <!-- Navigation Bar -->
         <nav class="navbar">
-            <div class="hamburger" id="hamburger">
-                &#9776; <!-- Unicode for hamburger icon -->
-            </div>
-
-            <div class="nav-logo">
+          
+           <div class="logo-hambuger-container">
+         <div class="nav-logo">
                 <img src="assets/logo.png" alt="">
                 <a href="#">Brew Haven</a>
             </div>
-
+ <div class="hamburger" id="hamburger">
+                &#9776; 
+            </div>
+           </div>
+       
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -45,6 +47,8 @@
             <div class="nav-actions">
                 <button class="btn buy-btn">Login</button>
             </div>
+
+             
         </nav>
 
         <!-- Sidebar menu -->
@@ -298,6 +302,26 @@
     </div>
 </section>
 
+<!-- Contact Section -->
+<section id="contact-us" class="contact-section">
+  <!-- Animated Icons -->
+  <img src="assets/coffee-beans.png" alt="Coffee Beans" class="floating-icon icon-beans" />
+  <img src="assets/coffee-tag.png" alt="Coffee Cup" class="floating-icon icon-cup" />
+
+  <div class="contact-content">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Send us a message for any questions, feedback, or inquiries.</p>
+    <form class="contact-form">
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn  btn-secondary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+
+
 <!-- Newsletter Section -->
 <section class="newsletter-section">
   <div class="newsletter-container">
@@ -330,8 +354,9 @@
       <h4>Navigate</h4>
       <ul>
         <li><a href="#home-section">Home</a></li>
+          <li><a href="#about-section">About</a></li>
         <li><a href="#menu-section">Menu</a></li>
-        <li><a href="#about-section">About</a></li>
+        <li><a href="#staff-section">Staff</a></li>
         <li><a href="#contact-section">Contact</a></li>
       </ul>
     </div>
@@ -392,7 +417,12 @@
                 clickable: true,
             }
         });
+
+        const parallaxImage = document.querySelector('.parallax-img');
+
+   
     </script>
+
 
 </body>
 
