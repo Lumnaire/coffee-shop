@@ -45,7 +45,7 @@
             </ul>
 
             <div class="nav-actions">
-                <button class="btn buy-btn">Login</button>
+                <a href="login.php"><button class="btn buy-btn">Login</button></a>
             </div>
 
              

@@ -32,6 +32,37 @@ body, html {
   margin-bottom: 2rem;
 }
 
+.login-header{
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  align-items: start;
+}
+
+.logo-container{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.back-button-container{
+ 
+  
+}
+
+.back-button-container a{
+   display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+}
+
+.back-img {
+  width: 20px;
+  height: 20px;
+}
+
 .login-logo img {
   width: 50px;
   height: 50px;
@@ -127,6 +158,14 @@ body, html {
 .input-wrapper input {
   width: 100%;
   padding: 0.8rem 0.8rem 0.8rem 3rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.register-input-wrapper input{
+   width: 100%;
+  padding: 0.8rem 0.8rem 0.8rem 0.8rem;
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 1rem;
