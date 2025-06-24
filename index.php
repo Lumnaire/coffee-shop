@@ -25,30 +25,30 @@
 
         <!-- Navigation Bar -->
         <nav class="navbar">
-          
-           <div class="logo-hambuger-container">
-         <div class="nav-logo">
-                <img src="assets/logo.png" alt="">
-                <a href="#">Brew Haven</a>
+
+            <div class="logo-hambuger-container">
+                <div class="nav-logo">
+
+                    <a href="index.php"> <img src="assets/logo.png" alt="">Brew Haven</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    &#9776;
+                </div>
             </div>
- <div class="hamburger" id="hamburger">
-                &#9776; 
-            </div>
-           </div>
-       
+
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Staff</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="menu.php">Menu</a></li>
+                <li><a href="staff.php">Staff</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
 
             <div class="nav-actions">
                 <a href="login.php"><button class="btn buy-btn">Login</button></a>
             </div>
 
-             
+
         </nav>
 
         <!-- Sidebar menu -->
@@ -113,7 +113,7 @@
                 <p class="about-description">
                     Our mission is to ethically source the finest beans from around the globe, master the art of every pour, and serve each cup with a commitment to quality and community. We believe in the power of a perfect brew to inspire, comfort, and bring people together. Every cup we serve is a testament to our dedication to craftsmanship and our desire to make your day a little brighter, one sip at a time.
                 </p>
-                <button class="btn btn-secondary">Read More</button>
+                <a href="about.php"> <button class="btn btn-secondary">Read More</button></a>
             </div>
         </div>
     </section>
@@ -233,7 +233,7 @@
         </div>
 
         <div class="view-all-container">
-            <button class="btn btn-secondary">View All Products</button>
+            <a href="menu.php"> <button class="btn btn-secondary">View All Products</button></a>
         </div>
     </section>
 
@@ -260,132 +260,138 @@
     </section>
 
     <!-- Meet Our Staff Section -->
-<section class="staff-section">
-    <div class="staff-header">
-        <div class="staff-title">
-            <h2>Meet Our Staff</h2>
-            <p>Get to know the passionate people behind your favorite coffee creations.</p>
+    <section class="staff-section">
+        <div class="staff-header">
+            <div class="staff-title">
+                <h2>Meet Our Staff</h2>
+                <p>Get to know the passionate people behind your favorite coffee creations.</p>
+            </div>
+            <div class="staff-button">
+                <a href="staff.php">
+                    <button class="btn btn-secondary">
+                        View More
+                        <img src="assets/right-arrow.png" alt="Right Arrow Icon">
+                    </button>
+                </a>
+
+            </div>
         </div>
-        <div class="staff-button">
-            <button class="btn btn-secondary">
-                View More
-                <img src="assets/right-arrow.png" alt="Right Arrow Icon">
-            </button>
+
+        <div class="staff-grid">
+            <div class="staff-card">
+                <img src="assets/Liam.jpg" alt="Liam">
+                <h4>Leo</h4>
+            </div>
+            <div class="staff-card">
+                <img src="assets/Emma.jpg" alt="Emma">
+                <h4>Emma</h4>
+            </div>
+            <div class="staff-card">
+                <img src="assets/Sophie.jpg" alt="Sophie">
+                <h4>Sophie</h4>
+            </div>
+            <div class="staff-card">
+                <img src="assets/Olivia.jpg" alt="Olivia">
+                <h4>Olivia</h4>
+            </div>
+            <div class="staff-card">
+                <img src="assets/Ava.jpg" alt="Ava">
+                <h4>Ava</h4>
+            </div>
+            <div class="staff-card">
+                <img src="assets/Noah.jpg" alt="Noah">
+                <h4>Noah</h4>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="staff-grid">
-        <div class="staff-card">
-            <img src="assets/Liam.jpg" alt="Liam">
-            <h4>Leo</h4>
+    <!-- Contact Section -->
+    <section id="contact-us" class="contact-section">
+        <!-- Animated Icons -->
+        <img src="assets/coffee-beans.png" alt="Coffee Beans" class="floating-icon icon-beans" />
+        <img src="assets/coffee-tag.png" alt="Coffee Cup" class="floating-icon icon-cup" />
+
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Send us a message for any questions, feedback, or inquiries.</p>
+            <form class="contact-form">
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn  btn-secondary">Send Message</button>
+            </form>
         </div>
-        <div class="staff-card">
-            <img src="assets/Emma.jpg" alt="Emma">
-            <h4>Emma</h4>
+    </section>
+
+
+
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2>Join Our Newsletter</h2>
+                <p>Stay updated with the latest promos, seasonal drinks, and exclusive coffee creations.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required />
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="newsletter-image">
+                <img src="assets/newsletter.png" alt="Newsletter">
+            </div>
         </div>
-        <div class="staff-card">
-            <img src="assets/Sophie.jpg" alt="Sophie">
-            <h4>Sophie</h4>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-container">
+
+            <!-- Logo and Title -->
+            <div class="footer-brand">
+                <a href="index.php">
+                    <img src="assets/logo.png" alt="Logo">
+                    <h2>Brew Haven</h2>
+                </a>
+
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="footer-nav">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="menu.php">Menu</a></li>
+                    <li><a href="staff.php">Staff</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Open Hours -->
+            <div class="footer-hours">
+                <h4>Opening Hours</h4>
+                <p>Mon - Fri: 8:00 AM – 8:00 PM</p>
+                <p>Sat - Sun: 9:00 AM – 10:00 PM</p>
+                <p> 123 Brew Avenue, Coffeeville, CA 90210</p>
+            </div>
+
+            <!-- Socials -->
+            <div class="footer-socials">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="assets/x.png" alt="X"></a>
+                </div>
+            </div>
+
         </div>
-        <div class="staff-card">
-            <img src="assets/Olivia.jpg" alt="Olivia">
-            <h4>Olivia</h4>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Caffeine Canvas. All rights reserved.</p>
         </div>
-        <div class="staff-card">
-            <img src="assets/Ava.jpg" alt="Ava">
-            <h4>Ava</h4>
-        </div>
-        <div class="staff-card">
-            <img src="assets/Noah.jpg" alt="Noah">
-            <h4>Noah</h4>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact-us" class="contact-section">
-  <!-- Animated Icons -->
-  <img src="assets/coffee-beans.png" alt="Coffee Beans" class="floating-icon icon-beans" />
-  <img src="assets/coffee-tag.png" alt="Coffee Cup" class="floating-icon icon-cup" />
-
-  <div class="contact-content">
-    <h2>Contact Us</h2>
-    <p>We'd love to hear from you! Send us a message for any questions, feedback, or inquiries.</p>
-    <form class="contact-form">
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn  btn-secondary">Send Message</button>
-    </form>
-  </div>
-</section>
-
-
-
-
-<!-- Newsletter Section -->
-<section class="newsletter-section">
-  <div class="newsletter-container">
-    <div class="newsletter-content">
-      <h2>Join Our Newsletter</h2>
-      <p>Stay updated with the latest promos, seasonal drinks, and exclusive coffee creations.</p>
-      <form class="newsletter-form">
-        <input type="email" placeholder="Enter your email" required />
-        <button type="submit" class="btn btn-primary">Subscribe</button>
-      </form>
-    </div>
-
-    <div class="newsletter-image">
-      <img src="assets/newsletter.png" alt="Newsletter">
-    </div>
-  </div>
-</section>
-
-<footer class="footer-section">
-  <div class="footer-container">
-    
-    <!-- Logo and Title -->
-    <div class="footer-brand">
-      <img src="assets/logo.png" alt="Logo">
-      <h2>Brew Haven</h2>
-    </div>
-
-    <!-- Navigation Links -->
-    <div class="footer-nav">
-      <h4>Navigate</h4>
-      <ul>
-        <li><a href="#home-section">Home</a></li>
-          <li><a href="#about-section">About</a></li>
-        <li><a href="#menu-section">Menu</a></li>
-        <li><a href="#staff-section">Staff</a></li>
-        <li><a href="#contact-section">Contact</a></li>
-      </ul>
-    </div>
-
-    <!-- Open Hours -->
-    <div class="footer-hours">
-      <h4>Opening Hours</h4>
-      <p>Mon - Fri: 8:00 AM – 8:00 PM</p>
-      <p>Sat - Sun: 9:00 AM – 10:00 PM</p>
-      <p>   123 Brew Avenue, Coffeeville, CA 90210</p>
-    </div>
-
-    <!-- Socials -->
-    <div class="footer-socials">
-      <h4>Follow Us</h4>
-      <div class="social-icons">
-        <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
-        <a href="#"><img src="assets/youtube.png" alt="YouTube"></a>
-        <a href="#"><img src="assets/x.png" alt="X"></a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Copyright -->
-  <div class="footer-bottom">
-    <p>&copy; 2025 Caffeine Canvas. All rights reserved.</p>
-  </div>
-</footer>
+    </footer>
 
 
 
@@ -419,8 +425,6 @@
         });
 
         const parallaxImage = document.querySelector('.parallax-img');
-
-   
     </script>
 
 

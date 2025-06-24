@@ -74,6 +74,8 @@ body {
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 1px;
+    display: flex;
+    gap: 0.5rem;
 }
 
 
@@ -840,6 +842,10 @@ body {
     height: 18px;
 }
 
+.staff-button a {
+    text-decoration: none;
+}
+
 .staff-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -1051,6 +1057,13 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.footer-brand a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.5rem;
 }
 
 .footer-brand img {
