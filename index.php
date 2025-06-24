@@ -58,11 +58,11 @@
                 <h2>Brew Haven</h2>
             </div>
             <ul class="sidebar-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Staff</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="menu.php">Menu</a></li>
+                <li><a href="staff.php">Staff</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
         </div>
         <div class="sidebar-overlay" id="sidebarOverlay"></div>
@@ -71,7 +71,7 @@
         <div class="hero-content">
             <h1 class="brand-name">Caffeine Canvas</h1>
             <p class="tagline">Where Every Sip Tells a Story, and Every Visit Brews a Memory.</p>
-            <button class="btn btn-secondary">View Menu</button>
+            <a href="#menu-section"><button class="btn btn-secondary">View Menu</button></a>
             <div class="info-badges">
                 <div class="info-item">
                     <img src="assets/testimonials.png" alt="Testimonials Icon" class="info-icon">
