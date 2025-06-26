@@ -37,11 +37,11 @@
             </div>
 
             <ul class="nav-links">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="menu.php">Menu</a></li>
-                <li><a href="staff.php">Staff</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#staff">Staff</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
             <div class="nav-actions">
@@ -58,20 +58,20 @@
                 <h2>Brew Haven</h2>
             </div>
             <ul class="sidebar-links">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="menu.php">Menu</a></li>
-                <li><a href="staff.php">Staff</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="#index">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#staff">Staff</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
         <!-- Hero Content -->
-        <div class="hero-content">
+        <div class="hero-content" id="home">
             <h1 class="brand-name">Caffeine Canvas</h1>
             <p class="tagline">Where Every Sip Tells a Story, and Every Visit Brews a Memory.</p>
-            <a href="#menu-section"><button class="btn btn-secondary">View Menu</button></a>
+            <a href="#menu"><button class="btn btn-secondary">View Menu</button></a>
             <div class="info-badges">
                 <div class="info-item">
                     <img src="assets/testimonials.png" alt="Testimonials Icon" class="info-icon">
@@ -87,7 +87,7 @@
 
 
     <!-- About Us Section -->
-    <section id="about-us">
+    <section id="about">
         <div class="about-us-container">
             <div class="about-left">
                 <img src="assets/about.webp" alt="Woman drinking coffee" class="about-image">
@@ -113,14 +113,14 @@
                 <p class="about-description">
                     Our mission is to ethically source the finest beans from around the globe, master the art of every pour, and serve each cup with a commitment to quality and community. We believe in the power of a perfect brew to inspire, comfort, and bring people together. Every cup we serve is a testament to our dedication to craftsmanship and our desire to make your day a little brighter, one sip at a time.
                 </p>
-                <a href="about.php"> <button class="btn btn-secondary">Read More</button></a>
+              
             </div>
         </div>
     </section>
 
     <!-- Menu Section -->
 
-    <section id="menu-section" class="menu-section">
+    <section id="menu" class="menu-section">
         <h2 class="section-title">Our Menu</h2>
         <p class="section-description">Explore our handpicked cold coffee creations, each crafted for refreshment and delight.</p>
 
@@ -232,9 +232,7 @@
             <div class="swiper-pagination"></div>
         </div>
 
-        <div class="view-all-container">
-            <a href="menu.php"> <button class="btn btn-secondary">View All Products</button></a>
-        </div>
+     
     </section>
 
     <!-- Best Seller Section -->
@@ -260,21 +258,13 @@
     </section>
 
     <!-- Meet Our Staff Section -->
-    <section class="staff-section">
+    <section class="staff-section" id="staff">
         <div class="staff-header">
             <div class="staff-title">
                 <h2>Meet Our Staff</h2>
                 <p>Get to know the passionate people behind your favorite coffee creations.</p>
             </div>
-            <div class="staff-button">
-                <a href="staff.php">
-                    <button class="btn btn-secondary">
-                        View More
-                        <img src="assets/right-arrow.png" alt="Right Arrow Icon">
-                    </button>
-                </a>
-
-            </div>
+           
         </div>
 
         <div class="staff-grid">
@@ -306,7 +296,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact-us" class="contact-section">
+    <section id="contact" class="contact-section">
         <!-- Animated Icons -->
         <img src="assets/coffee-beans.png" alt="Coffee Beans" class="floating-icon icon-beans" />
         <img src="assets/coffee-tag.png" alt="Coffee Cup" class="floating-icon icon-cup" />
@@ -360,10 +350,10 @@
                 <h4>Navigate</h4>
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About</a></li>
-                    <li><a href="menu.php">Menu</a></li>
-                    <li><a href="staff.php">Staff</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#staff">Staff</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
 
